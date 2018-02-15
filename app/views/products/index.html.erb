@@ -14,7 +14,7 @@ $(function() {
         if( data["inventory"] == 0 ){
           inventoryText = "<strong>Sold Out</strong>";
         }
-        var description = data["description"]
+        var description = data["description"];
         var descriptionText = "<p>" + description + "</p><p>" + inventoryText + "</p>";
         $("#product-" + id).html(descriptionText);
     });
